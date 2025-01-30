@@ -1,8 +1,14 @@
 /* General styles */
+html, body {
+    height: 100%; /* Full height for html and body */
+}
+
 body {
     font-family: Arial, sans-serif; /* Modern, easy-to-read font */
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header styles */
@@ -62,7 +68,6 @@ header h1 {
     justify-content: center; /* Center the content */
     align-items: center; /* Center items vertically */
     padding: 50px 20px; /* Padding for spacing */
-    background-color: #f0f4f8; /* Light background color */
 }
 
 .info-section img {
@@ -78,6 +83,7 @@ header h1 {
 }
 
 .info-section h2 {
+    color: #006064;
     font-size: 2em; /* Heading size */
     margin-bottom: 20px; /* Space below the heading */
 }
@@ -85,4 +91,22 @@ header h1 {
 .info-section p {
     font-size: 1.2em; /* Text size */
     line-height: 1.5; /* Line height for readability */
+}
+
+/* Footer styles */
+main {
+    flex: 1; /* Take up remaining space */
+}
+
+footer {
+    background-color: #006064; /* Dark teal background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px 0; /* Padding for spacing */
+    font-size: 1em; /* Standard font size */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
 }
